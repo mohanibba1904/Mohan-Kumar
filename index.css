@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+.main-container {
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.CCTech-search-header {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5cdcd;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.CCTech-logo {
+    width: 150px;
+    margin-bottom: 30px;
+    background-color: #b4d1c3;
+    border-radius: 70px;
+    padding: 10px;
+}
+
+.search-input {
+    font-size: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5cdcd;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.heading {
+    color: #3e4c59;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.CCTech-card {
+    text-align: center;
+    background-color: #ebf2fc;
+    margin-bottom: 15px;
+    border: 2px solid blue;
+    width: 450px;
+    margin: 20px;
+}
+
+.userdetails {
+    border-left-style: solid;
+    border-left-color: #64748b;
+    padding-left: 10px;
+    margin: 7px;
+}
+
+.user-image {
+    width: 140px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.user-name {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.user-paragraph {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

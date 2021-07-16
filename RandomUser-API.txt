@@ -1,0 +1,43 @@
+const express = require("express");
+const path = require("path");
+const { open } = require("sqlite");
+const sqlite3 = require("sqlite3");
+
+
+const app = express();
+app.use(express.json());
+
+#DataBase File Name
+
+const dbPath = path.join(__dirname, "{DataBaseFileName}.db");
+
+let db = null;
+
+#Data Base Connection
+const initializeDBAndServer = async () => {
+  try {
+    db = await open({
+      filename: dbPath,
+      driver: sqlite3.Database,
+    });
+    app.listen(3000, () => {
+      console.log("Server Running at http://localhost:3000/");
+    });
+  } catch (e) {
+    console.log(`DB Error: ${e.message}`);
+    process.exit(1);
+  }
+};
+initializeDBAndServer();
+
+// Get RandomUsers API
+app.get("/randomuser.me/api/", async (request, response) => {
+const { results } = request.params;
+  const getRandomUsersQuery = `SELECT
+      results
+    FROM
+      TableName
+	LIMIT ${results};`;
+  const RandomUsersArray = await db.all(getRandomUsersQuery);
+  response.send(RandomUsersArray);
+});
